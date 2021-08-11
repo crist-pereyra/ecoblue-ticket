@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
-}
+@import url('//db.onlinewebfonts.com/c/1662223a08da40ff1fb0a032108727b7?family=BC+Alphapipe+L');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --primary: #95C73F;
+  --secondary: #4e4e4e;
+  --error: #ff4a4a;
+  --header: #03091E;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+/* base styles & title */
+body{
+  font-family: "BC Alphapipe L";
+  color: var(--secondary);
+  font-size: 62.5%;
+  background-color: #f7f7f7;
+  /*display: flex;*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+.container {
+  margin: 30px auto;
+  width: 350px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title h1{
+  color: var(--primary);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: normal;
+  background-color: var(--header);
+  padding: 0.5em;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+}
+.title h2, .title p{
+  text-align: center;
+  font-size: 1rem;
+}
+.title h2{
+  margin-top: 60px;
+  font-size: 2.6rem;
+}
+.carousel-item {
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 3rem;
+  display: block;
+  width: 350;
+  height: 20em;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.carousel-item h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+.carousel-item p {
+  font-size: 1.5rem;
+}
+.platform{
+  background: linear-gradient(0deg ,#00BCB4, #C4E86B);
+}
+.payment{
+  background: linear-gradient(0deg ,#FF7D58, #FFCC4B);
+}
+.v{
+  background: linear-gradient(0deg ,#19335A, #8FC8EB);
+}
+
+button {
+  outline: 0;
+  border: 0;
+  background:var(--primary);
+  margin:25px;
+  padding: 10px 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+  color: #fff;
+  cursor:pointer;
+  border-radius:50px;
+  transition: all 0.3s ease;
 }
